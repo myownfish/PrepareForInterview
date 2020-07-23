@@ -18,7 +18,7 @@ public class BinaryTreeInorderTranversal94 {
         root.right.left = new TreeNode(12);
         root.right.right = new TreeNode(13);
 //        inorderTraversal(root);
-        stackHelper(root);
+        System.out.println(stackHelper(root));
 
     }
 

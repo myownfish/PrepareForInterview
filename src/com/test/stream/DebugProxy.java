@@ -2,6 +2,7 @@ package com.test.stream;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 
 public class DebugProxy implements InvocationHandler {
     
@@ -26,6 +27,11 @@ public class DebugProxy implements InvocationHandler {
         result = m.invoke(obj, args);
         System.out.println("after method " + m.getName());
         return result;
+    }
+    
+    public static void main(String args[]) {
+        Object obj = DebugProxy.newInstance(new HashMap());
+        System.out.println(obj);
     }
 
 }

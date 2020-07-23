@@ -21,6 +21,7 @@ public class BinaryTreePostorderTranversal145 {
         List<Integer> result1 = postorderTraversal(root);
         List<Integer> result2 = stackHelper(root);
         System.out.println(result1.equals(result2));
+        System.out.println(result1);
 
     }
 

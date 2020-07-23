@@ -20,7 +20,7 @@ public class BinaryTreePreorderTranversal144 {
         root.right.right = new TreeNode(13);
 //        preorderTraversal(root);
 //        stackHelper(root);
-        linkedListHelper(root);
+        System.out.println(linkedListHelper(root));
 
     }
 
